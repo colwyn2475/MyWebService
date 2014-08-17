@@ -1,4 +1,11 @@
 ﻿function test(request, response) {
-    response.contentType = 'text/plain';
-    return 'Communication with server working!';
+	var return_var = '';
+	response.contentType = 'text/plain';
+	if (request.rawURL === "/Ping") {
+	  return_var = "OK";
+	}
+	if (request.rawURL === "/Get") {
+	  return_var = "OK";
+	}
+    return return_var;
 }
