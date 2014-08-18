@@ -1,11 +1,11 @@
 ﻿function test(request, response) {
 	//console.log("here");
-	//console.log(request.rawURL);
+	console.log(request.rawURL);
 	//console.log(request.body);
-	//console.log(request.contentType);
-	//console.log(request.host);
-	//console.log(request.method);
-	//console.log(request.line);
+	console.log(request.contentType);
+	console.log(request.host);
+	console.log(request.method);
+	console.log(request.requestLine);
 	var return_var = 'OK';
 	response.contentType = 'text/plain';
 	//if (request.rawURL === "/Ping") {
