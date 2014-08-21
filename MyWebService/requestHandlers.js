@@ -16,19 +16,19 @@
     	return 'OK';
     }
     // Look for "What is your full name"
-    var patt = /What is your full name/g;
+    var patt = /Name/g;
     var bResult = patt.test(request.url);
     if (bResult === true) {
     	return 'Thomas Kirk McFarland';
     }
     // Look for "What is your email address"
-    var patt = /What is your email address/g;
+    var patt = /Email+Address/g;
     var bResult = patt.test(request.url);
     if (bResult === true) {
     	return 'cirrusinfosys@gmail.com';
     }
     // Look for "Please provide a phone"
-    var patt = /Please provide a phone/g;
+    var patt = /Phone/g;
     var bResult = patt.test(request.url);
     if (bResult === true) {
     	return '208 447-7271';
@@ -40,43 +40,43 @@
     	return 'Software / DB Developer';
     }
      // Look for "How many years"
-    var patt = /How many years/g;
+    var patt = /Years/g;
     var bResult = patt.test(request.url);
     if (bResult === true) {
     	return '30';
     }
     // Look for "How did you hear"
-    var patt = /How did you hear/g;
+    var patt = /Referrer/g;
     var bResult = patt.test(request.url);
     if (bResult === true) {
     	return 'Craigslist Boise';
     }
      // Look for "Please list"
-    var patt = /Please list/g;
+    var patt = /Degree/g;
     var bResult = patt.test(request.url);
     if (bResult === true) {
     	return 'B.S in Computer Information Systems from Arizona State University';
     }
     // Look for "resume and cover letter"
-    var patt = /resume and cover letter/g;
+    var patt = /Resume/g;
     var bResult = patt.test(request.url);
     if (bResult === true) {
     	return 'https://employer.dice.com';
     }	
     // Look for "source code"
-    var patt = /source code/g;
+    var patt = /Source/g;
     var bResult = patt.test(request.url);
     if (bResult === true) {
     	return 'https://github.com/colwyn2475/MyWebService.git';
     }
     // Look for "proof of elig"
-    var patt = /proof of elig/g;
+    var patt = /Status/g;
     var bResult = patt.test(request.url);
     if (bResult === true) {
     	return 'Yes';
     }
      // Look for "For the puzzle"
-    var patt = /For the puzzle/g;
+    var patt = /Puzzle/g;
     var bResult = patt.test(request.url);
     if (bResult === true) {
     	return 'A=<>=  B<>=<  C>=<>  D=<>=';
