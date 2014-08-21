@@ -79,7 +79,7 @@
     var patt = /Puzzle/g;
     var bResult = patt.test(request.url);
     if (bResult === true) {
-    	return ' ABCD\nA=><<\nB<=<<\nC>>=<\nD>>>=';
+    	return ' ABCD\nA=>>>\nB<=<<\nC<>=<\nD<>>=';
     }
     //if (request.rawURL === "/Ping") {
 	//  return_var = "OK";
