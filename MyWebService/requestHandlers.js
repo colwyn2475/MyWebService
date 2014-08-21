@@ -6,6 +6,7 @@
 	//console.log(request.host);
 	//console.log(request.method);
 	//console.log(request.requestLine);
+	console.log(request.url);
 	
 	response.contentType = 'text/plain';
 	// Look for "Ping"
