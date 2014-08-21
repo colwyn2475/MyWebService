@@ -22,7 +22,7 @@
     	return 'Thomas Kirk McFarland';
     }
     // Look for "What is your email address"
-    var patt = /Email+Address/g;
+    var patt = /Email/g;
     var bResult = patt.test(request.url);
     if (bResult === true) {
     	return 'cirrusinfosys@gmail.com';
@@ -34,7 +34,7 @@
     	return '208 447-7271';
     }
     // Look for "Which position"
-    var patt = /Which position/g;
+    var patt = /Position/g;
     var bResult = patt.test(request.url);
     if (bResult === true) {
     	return 'Software / DB Developer';
